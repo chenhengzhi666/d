@@ -10,3 +10,11 @@
          };
          e.addEventListener&&(n.addEventListener(o,a,!1),e.addEventListener("DOMContentLoaded",a,!1))
 }(window);
+
+document.addEventListener("touchmove", function(e) {
+   if(e.preventDefault) {
+       e.preventDefault();
+   } else {
+       e.returnValue = false;
+   }
+}, false);
