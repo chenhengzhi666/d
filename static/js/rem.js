@@ -11,6 +11,10 @@
          e.addEventListener&&(n.addEventListener(o,a,!1),e.addEventListener("DOMContentLoaded",a,!1))
 }(window);
 
+window.ontouchstart = function(e) {
+    e.preventDefault(); 
+};
+
 document.addEventListener("touchmove", function(e) {
    if(e.preventDefault) {
        e.preventDefault();
